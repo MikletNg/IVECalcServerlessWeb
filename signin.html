@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
+
+    <title>Signin | IVE Att &amp; Abs Calculator</title>
+</head>
+
+<body>
+    <canvas></canvas>
+    <div class="loader-bg">
+        <div class="loader"></div>
+    </div>
+
+    <div id="sigin" class="container h-100">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="box">
+                <form id="signinForm" action="#">
+                    <h2 class="font-weight-bold py-3"><i class="fas fa-sign-in-alt"></i> Member Sign In</h2>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="emailInputSignin" placeholder="Enter email" required autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="passwordInputSignin" placeholder="Password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block font-weight-bold">SIGN IN</button>
+                    <hr>
+                    <small><a href="register.html" class="text-secondary">Register</a> &bull; <a href="forgot-password.html" class="text-secondary">Forgot Password</a></small>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <header class="cd-header">
+        <div id="cd-logo"><a href="https://miklet.pro"><i class="fas fa-code"></i> by Miklet with <i class="fas fa-heart" style="color:#e31b23"></i> on <i class="fab fa-aws"></i></a></div>
+        <a class="cd-menu-trigger" href="#main-nav">Menu<span></span></a>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html"><span><i class="fas fa-home"></i> Home</span></a></li>
+            <li><a href="document.html"><span><i class="fas fa-file-alt"></i> Document</span></a></li>
+            <li><a href="https://greasyfork.org/en/scripts/32663-ive-att-abs-calculator" target="_blank"><span><i class="fas fa-cloud-download-alt"></i> Download</span></a></li>
+            <li><a href="signin.html"><span><i class="fas fa-sign-in-alt"></i> Signin</span></a></li>
+            <li><a href="register.html"><span><i class="fas fa-edit"></i> Register</span></a></li>
+        </ul>
+        <a href="#0" class="cd-close-menu">Close<span></span></a>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" integrity="sha256-vrn14y7WH7zgEElyQqm2uCGSQrX/xjYDjniRUQx3NyU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js" integrity="sha256-4F7e4JsAJyLUdpP7Q8Sah866jCOhv72zU5E8lIRER4w=" crossorigin="anonymous"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/non-auth.js"></script>
+</body>
+
+</html>

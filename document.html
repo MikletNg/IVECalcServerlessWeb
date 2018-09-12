@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
+
+    <title>Document | IVE Att &amp; Abs Calculator</title>
+</head>
+
+<body>
+    <canvas></canvas>
+    <div class="loader-bg">
+        <div class="loader"></div>
+    </div>
+    <div class="container wrapper">
+        <div id="document" class="box">
+            <h1 class="display-4">Document</h1>
+            <hr>
+            <section>
+                <h2>Before start</h2>
+                <p>First, please install <b>Violentmonkey</b>, <span class="text-danger">the userscript may not work properly if you use Tampermonkey or Greasemonkey.</span></p>
+                <p>Download <b>Violentmonkey</b> for <a href="https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag" target="_blank"><i class="fab fa-chrome"></i> Chrome</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/" target="_blank"><i class="fab fa-firefox"></i> Firefox</a>. <span class="badge badge-secondary">This userscript is only for desktop computers.</span></p>
+                <div class="alert alert-info" role="alert">
+                    <b><i class="fab fa-opera"></i> Opera</b> also availible, but you have to download and install <a href="https://addons.opera.com/en/extensions/details/install-chrome-extensions/" target="_blank" class="alert-link">Install Chrome Extensions</a> first.
+                </div>
+            </section>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h2 id="download">Download and installation</h2>
+                    <p>Go <a href="https://greasyfork.org/en/scripts/32663-ive-att-abs-calculator" target="_blank">Greasyfork</a> download and install <i>IVE Att &amp; Abs Calculator</i>. <small class="text-muted">*Please ensure you are using <b>Violentmonkey</b>.</small></p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col order-2 order-lg-1">
+                    <h2>Next, bind your account on userscript</h2>
+                    <p>To enable to use the IVE Calculator. You need to <a href="register.html">register</a> a account at this website. After complete registration, go <a href="profile.html">profile</a> page, copy the secret key, and go myportal to bind your account the userscript.</p>
+                    <ol class="d-inline-block" style="list-style: decimal;list-style-position: inside">
+                        <li><a href="register.html">Register</a> a account on this website.</li>
+                        <li>Go to <a href="https://myportal.vtc.edu.hk/wps/portal" target="_blank">myportal</a> <i class="fas fa-long-arrow-alt-right"></i> Profile(個人檔案) <i class="fas fa-long-arrow-alt-right"></i> Class Attendance(課堂出席). <small class="text-muted">*Please ensure your myportal was traditional chinese(繁體中文) version.</small></li>
+                        <li>Select the icon of <b>Violentmonkey</b> on toolbar, and click <i>Bind account(綁定帳戶).</i></li>
+                        <li>Enter the secret key (copied from the <a href="profile.html">profile</a> page) and the student ID number. And choose the way you want to handle with you data.</li>
+                    </ol>
+
+                    <h2>Additional function</h2>
+                        <ul style="list-style:circle; list-style-position: inside">
+                            <li><strike>Update all subject in the dashboard(更新報告表中的所有單元) - The web browser will be refreshed continuously during the period</strike>(Future enhancement)</li>
+                            <li>Reset dashboard(重設報告表) - Clear all data in the dashboard.</li>
+                            <li><b>Reset all</b> - Clear all data that stored in the system.</li>
+                        </ul>
+                </div>
+                <div class="col-lg-auto order-1 order-lg-2"><img src="img/img-01.png" class="img-fluid"></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="cd-header">
+        <div id="cd-logo"><a href="https://miklet.pro"><i class="fas fa-code"></i> by Miklet with <i class="fas fa-heart" style="color:#e31b23"></i> on <i class="fab fa-aws"></i></a></div>
+        <a class="cd-menu-trigger" href="#main-nav">Menu<span></span></a>
+    </header>
+
+    <div class="cd-shadow-layer"></div>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html"><span><i class="fas fa-home"></i> Home</span></a></li>
+            <li><a href="document.html"><span><i class="fas fa-file-alt"></i> Document</span></a></li>
+            <li><a href="https://greasyfork.org/en/scripts/32663-ive-att-abs-calculator" target="_blank"><span><i class="fas fa-cloud-download-alt"></i> Download</span></a></li>
+            <li><a href="signin.html"><span><i class="fas fa-sign-in-alt"></i> Signin</span></a></li>
+            <li><a href="register.html"><span><i class="fas fa-edit"></i> Register</span></a></li>
+        </ul>
+        <a href="#0" class="cd-close-menu">Close<span></span></a>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" integrity="sha256-vrn14y7WH7zgEElyQqm2uCGSQrX/xjYDjniRUQx3NyU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js" integrity="sha256-4F7e4JsAJyLUdpP7Q8Sah866jCOhv72zU5E8lIRER4w=" crossorigin="anonymous"></script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
