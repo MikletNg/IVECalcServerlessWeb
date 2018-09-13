@@ -58,6 +58,7 @@ var User = window.User || {};
             Name: 'custom:studentId',
             Value: student_id
         };
+
         var attributeEmail = new AmazonCognitoIdentity.CognitoUserAttribute(dataEmail);
         var attributeStudentId = new AmazonCognitoIdentity.CognitoUserAttribute(dataStudentId);
 
